@@ -1,0 +1,45 @@
+GET http://localhost:3000/teacher/view
+Content-Type: application/json
+
+{
+    "jwt":"vsdfdrgrd"
+}
+
+
+###
+POST http://localhost:3000/teacher
+Content-Type: application/json
+
+{
+        "first_name": "abhishek",
+        "last_name": "Modi",
+        "DateOfBirth": "11/03/2000",
+        "Gender": "Male",
+        "Experience": 3,
+        "Subject": "CS",
+        "Status": "Active"
+}
+ 
+###
+POST http://localhost:3000/teacher/register
+Content-Type: application/json
+
+{
+    "Username": "Abhishek",
+    "Email": "r@mknggghg.com",
+    "Pass":"swdeqw"
+}
+
+####
+
+GET http://localhost:3000/teacher/login
+Content-Type: application/json
+
+{
+    "Username": "Abhishek",
+    "Email": "abc@gmail.com",
+    "Pass":"swdeqw"
+}
+###
+
+GET http://localhost:3000/teacher/fetchall
